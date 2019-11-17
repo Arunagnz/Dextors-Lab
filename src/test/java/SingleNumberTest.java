@@ -10,10 +10,26 @@ import static org.junit.Assert.*;
 public class SingleNumberTest {
 
     @Test
-    public void singleNumber() {
+    public void singleNumber1() {
         final int[] input = {1, 2, 3, 1, 3};
         int output = SingleNumber.singleNumber(input);
 
-        assert output == 2;
+        assertEquals(2, output);
+    }
+
+    @Test
+    public void singleNumber2() {
+        final int[] input = {1, 2, 2};
+        int output = SingleNumber.singleNumber(input);
+
+        assertEquals(1, output);
+    }
+
+    @Test
+    public void singleNumber3() {
+        final int[] input = {12};
+        int output = SingleNumber.singleNumber(input);
+
+        assertEquals(12, output);
     }
 }

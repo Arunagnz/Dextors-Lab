@@ -9,10 +9,10 @@
  * Output: 5->4->3->2->1->NULL
  **/
 public class ReverseLinkedList {
-    public ListNode reverseList(ListNode head) {
-        ListNode result = null;
+    public static SingleListNode reverseList(SingleListNode head) {
+        SingleListNode result = null;
         while (head != null) {
-            ListNode temp = head;
+            SingleListNode temp = head;
             head = head.next;
             temp.next = result;
             result = temp;
